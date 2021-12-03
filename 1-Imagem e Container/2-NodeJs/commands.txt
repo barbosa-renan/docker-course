@@ -1,0 +1,5 @@
+docker rm $(docker ps -aq) -f
+
+docker build . -t app-node1
+
+docker run -p 3000:3000 app-node1
