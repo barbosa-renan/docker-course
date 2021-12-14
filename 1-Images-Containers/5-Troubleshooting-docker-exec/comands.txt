@@ -1,0 +1,19 @@
+$ docker run -it alpine
+
+//criar um arquivo
+# cat /etc/hostname
+# cat /app.txt
+# echo 'texto do arquivo' > app.txt
+# cat /app.txt
+
+$ docker ps -a
+
+// rodar o docker no mesmo container -> docker exec
+docker exec -it c5f11c570528 //bin//sh
+
+// ver os processos com a ferramenta top
+docker top c5f11c570528
+
+exit
+
+docker kill c5f11c570528
