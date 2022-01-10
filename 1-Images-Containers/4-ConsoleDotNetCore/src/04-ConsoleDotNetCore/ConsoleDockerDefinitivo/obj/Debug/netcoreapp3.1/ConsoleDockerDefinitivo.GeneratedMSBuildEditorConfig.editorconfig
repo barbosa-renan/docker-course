@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = ConsoleDockerDefinitivo
+build_property.ProjectDir = c:\_dev\1-Images-Containers\4-ConsoleDotNetCore\src\04-ConsoleDotNetCore\ConsoleDockerDefinitivo\
