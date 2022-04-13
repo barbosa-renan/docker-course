@@ -3,13 +3,14 @@ version: '3.4'
 services:
 
   mysql_service_rnn:
-    image: mysql:8
+    ##image: mysql:8
+    ##image? mariadb:10
     environment:
       - MYSQL_ROOT_PASSWORD=p@ssk3yrnn
       - MYSQL_DATABASE=dockerdefinitivo
       - MYSQL_USER=app
       - MYSQL_PASSWORD=p@ssk3y
-    volumes: -mysql_data:/var/lib/mysql
+    volumes: -mysql_data:/var/lib/mysql -./scripts/:docker-entrypoint-initdb.d
     ports: -3306:3306
 
 volumes:
